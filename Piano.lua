@@ -66,7 +66,7 @@ function l_createPianoKeys(white_keys_amount)
 		table.insert(blacks, {
 			type = 'black',
 			x = white_width * i + white_width*2/3 + offset * white_width,
-			y = keyboard_height*1/3,--keyboard_height,
+			y = keyboard_height*1/3,
 			w = white_width*1.5/3,
 			h = keyboard_height*2/3,
 			color = g_Color.black,

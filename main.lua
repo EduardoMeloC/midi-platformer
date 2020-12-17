@@ -7,7 +7,6 @@ Object = require 'libs/classic'
 bump = require 'libs/bump'
 
 require 'Vector2'
---require 'Rect'
 require 'Piano'
 require 'Player'
 require 'Platform'
@@ -40,11 +39,7 @@ function love.load()
 
 	g_world = bump.newWorld()
 	g_piano = Piano(21)
-	--g_notes = createPianoNotes()
-	--g_noteID = createNoteID(g_notes)
 	g_player = Player(g_screen.w/2, 120)
-	--local pianocol = g_colliders.piano
-	--g_world:add(pianocol, pianocol.x, pianocol.y, pianocol.w, pianocol.h)
 end
 
 -- up right coordinate system

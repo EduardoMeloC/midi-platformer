@@ -18,7 +18,7 @@ function MidiSystem:init()
 		print("Midi Input Ports: ", self._inputports)
 		table.foreach(midi.enumerateinports(), print)
 		print( 'Receiving on device: ', luamidi.getInPortName(self._indevicenumber))
-		-- not needed for this demo
+		-- not needed for now
 --		self._in0 = midi.openin(self._indevicenumber)
 	else
 		print("No Midi Input Ports found!")
